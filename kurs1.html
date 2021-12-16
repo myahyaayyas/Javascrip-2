@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kurs1.css">
+    <title>Kurs</title>
+</head>
+<body>
+    <fieldset>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Masukan Nilai</td>
+                    <td>Valas</td>
+                    <td>Nilai Rupiah</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="dollarus" type="number">
+                    </td>
+                    <td>Dollar US</td>
+                    <td>
+                        <input id="rupiah" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="dollarsin" type="number">
+                    </td>
+                    <td>Dollar Singapore</td>
+                    <td>
+                        <input id="rupiah2" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="ringgit" type="number">
+                    </td>
+                    <td>Ringgit Malaysia</td>
+                    <td>
+                        <input id="rupiah3" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="yen" type="number">
+                    </td>
+                    <td>Yen Jepan</td>
+                    <td>
+                        <input id="rupiah4" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="euro" type="number">
+                    </td>
+                    <td>Euro</td>
+                    <td>
+                        <input id="rupiah5" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="riyal" type="number">
+                    </td>
+                    <td>Riyal Arab Saudi</td>
+                    <td>
+                        <input id="rupiah6" type="number">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="hitungkurs()">Hitung</button>
+    </fieldset>
+    <script>
+        function hitungkurs() {
+            rupiah.value = dollarus.value * 14650;
+            rupiah2.value = dollarsin.value * 10435;
+            rupiah3.value = ringgit.value * 3377;
+            rupiah4.value = yen.value * 125;
+            rupiah5.value = euro.value * 16157;
+            rupiah6.value = riyal.value * 3807;
+        }
+    </script>
+</body>
+</html>
